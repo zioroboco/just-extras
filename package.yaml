@@ -1,0 +1,5 @@
+private: true
+scripts:
+  fmt: pnpm dprint fmt
+dependencies:
+  dprint: ^0.29.1
