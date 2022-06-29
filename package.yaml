@@ -1,5 +1,7 @@
+packageManager: pnpm@7.4.0
 private: true
 scripts:
   fmt: pnpm dprint fmt
+  test: node --test
 dependencies:
   dprint: ^0.29.1
