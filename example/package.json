@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "dummy": "echo blep",
     "example": "just example"
   },
   "dependencies": {

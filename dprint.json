@@ -7,6 +7,7 @@
   },
 
   "typescript": {
+    "arguments.trailingCommas": "never",
     "lineWidth": 80,
     "semiColons": "asi"
   },

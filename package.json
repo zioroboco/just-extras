@@ -6,7 +6,7 @@
   "author": "Louis Quinnell <_@ziorobo.co>",
   "repository": "github:zioroboco/just-extras",
   "type": "module",
-  "bin": "lib/main.js",
+  "bin": "lib/cli.js",
   "files": [
     "lib",
     "!**/*.test.*"
@@ -14,8 +14,7 @@
   "scripts": {
     "example": "cd example && pnpm",
     "format": "just format",
-    "typecheck": "just typecheck",
-    "test": "just test"
+    "typecheck": "just typecheck"
   },
   "dependencies": {
     "clipanion": "3.2.0-rc.11"

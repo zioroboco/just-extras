@@ -1,6 +1,6 @@
 set positional-arguments
 
-all: install format typecheck test
+all: install format typecheck
 
 install:
     pnpm install --loglevel=error
@@ -10,6 +10,3 @@ format: install
 
 typecheck: install
     pnpm tsc --project jsconfig.json
-
-test: install
-    node --test

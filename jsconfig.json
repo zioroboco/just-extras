@@ -3,7 +3,6 @@
     "checkJs": true,
     "lib": ["es2020"],
     "module": "es2020",
-    "moduleResolution": "node16",
-    "strict": true
+    "moduleResolution": "node16"
   }
 }
