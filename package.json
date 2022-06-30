@@ -7,6 +7,10 @@
   "repository": "github:zioroboco/just-extras",
   "type": "module",
   "bin": "lib/main.js",
+  "files": [
+    "lib",
+    "!**/*.test.*"
+  ],
   "scripts": {
     "example": "cd example && pnpm",
     "format": "just format",
