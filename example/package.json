@@ -4,7 +4,7 @@
     "example": "just example"
   },
   "dependencies": {
-    "just-extras": "file:..",
+    "just-extras": "link:..",
     "just-install": "^1.0.8"
   }
 }
