@@ -1,19 +1,15 @@
 set positional-arguments
 
+all: install format typecheck test
+
 install:
-    pnpm install --ignore-scripts --loglevel=error
-
-build: install
-    pnpm tsc --build
-
-watch: install
-    pnpm tsc --build --watch
-
-clean: install
-    pnpm tsc --build --clean
+    pnpm install --loglevel=error
 
 format: install
     pnpm dprint fmt
 
-test: install build
-    pnpm node --test tests
+typecheck: install
+    pnpm tsc --project jsconfig.json
+
+test: install
+    node --test

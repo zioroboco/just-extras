@@ -3,11 +3,25 @@ name: checks
 on: push
 
 jobs:
-  fmt:
+
+  format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: dprint/check@v2
+
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+          node-version-file: .nvmrc
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+
   test:
     runs-on: ubuntu-latest
     steps:
@@ -17,6 +31,5 @@ jobs:
         with:
           cache: pnpm
           node-version-file: .nvmrc
-      - run: pnpm install --ignore-scripts --frozen-lockfile
-      - run: pnpm build
+      - run: pnpm install --frozen-lockfile
       - run: pnpm test
