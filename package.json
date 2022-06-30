@@ -6,7 +6,7 @@
   "author": "Louis Quinnell <_@ziorobo.co>",
   "repository": "github:zioroboco/just-extras",
   "type": "module",
-  "main": "dist/index.js",
+  "bin": "dist/main.js",
   "scripts": {
     "build": "just build",
     "watch": "just watch",
@@ -15,6 +15,10 @@
     "test": "just test"
   },
   "dependencies": {
+    "clipanion": "3.2.0-rc.11"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
     "dprint": "^0.29.1",
     "just-install": "^1.0.8",
     "typescript": "^4.7.4"

@@ -6,6 +6,7 @@
     "declarationMap": true,
     "lib": ["es2022"],
     "module": "es2022",
+    "moduleResolution": "node16",
     "outDir": "dist",
     "rootDir": "src",
     "target": "es2022"

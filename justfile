@@ -1,21 +1,19 @@
-bin := "node_modules/.bin/"
-dprint := bin + "dprint"
-tsc := bin + "tsc"
+set positional-arguments
 
 install:
-    pnpm install
+    pnpm install --ignore-scripts --loglevel=error
 
 build: install
-    {{ tsc }} --build
+    pnpm tsc --build
 
 watch: install
-    {{ tsc }} --build --watch
+    pnpm tsc --build --watch
 
 clean: install
-    {{ tsc }} --build --clean
+    pnpm tsc --build --clean
 
 format: install
-    {{ dprint }} fmt
+    pnpm dprint fmt
 
 test: install build
-    node --test tests
+    pnpm node --test tests
