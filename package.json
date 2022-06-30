@@ -8,6 +8,7 @@
   "type": "module",
   "bin": "dist/main.js",
   "scripts": {
+    "example": "cd example && pnpm",
     "build": "just build",
     "watch": "just watch",
     "clean": "just clean",

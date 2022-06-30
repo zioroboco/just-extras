@@ -1,4 +1,5 @@
 *.log
 *.tsbuildinfo
+/example/pnpm-lock.yaml
 dist/
 node_modules/

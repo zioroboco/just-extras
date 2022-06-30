@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "example": "just example"
+  },
+  "dependencies": {
+    "just-extras": "file:..",
+    "just-install": "^1.0.8"
+  }
+}
