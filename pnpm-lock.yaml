@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   dprint: ^0.29.1
+  just-install: ^1.0.8
   typescript: ^4.7.4
 
 dependencies:
   dprint: 0.29.1
+  just-install: 1.0.8
   typescript: 4.7.4
 
 packages:
@@ -26,6 +28,12 @@ packages:
     resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
     dependencies:
       pend: 1.2.0
+    dev: false
+
+  /just-install/1.0.8:
+    resolution: {integrity: sha512-m5Y1H2jh9Lhhmtq7Wyo0SMKauVIYN0nif9pRn9ccqNBE6xAxb7cZ4Xe4RUMXcXN9CIV+bKKWjgpHBagNfI1V7g==}
+    hasBin: true
+    requiresBuild: true
     dev: false
 
   /pend/1.2.0:
