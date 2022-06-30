@@ -18,4 +18,5 @@ jobs:
           cache: pnpm
           node-version-file: .nvmrc
       - run: pnpm install --ignore-scripts --frozen-lockfile
+      - run: pnpm build
       - run: pnpm test
