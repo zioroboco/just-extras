@@ -1,7 +1,5 @@
 set positional-arguments
 
-all: install format typecheck
-
 install:
     pnpm install --loglevel=error
 

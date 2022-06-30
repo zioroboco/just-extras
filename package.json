@@ -12,6 +12,7 @@
     "!**/*.test.*"
   ],
   "scripts": {
+    "sync": "just-extras sync --omit install",
     "example": "cd example && pnpm",
     "format": "just format",
     "typecheck": "just typecheck"
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@types/node": "^18.0.0",
     "dprint": "^0.29.1",
+    "just-extras": "link:.",
     "just-install": "^1.0.8",
     "typescript": "^4.7.4"
   },
