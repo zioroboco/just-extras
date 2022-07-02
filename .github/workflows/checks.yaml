@@ -4,13 +4,13 @@ on: push
 
 jobs:
 
-  format:
+  dprint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: dprint/check@22f4fe0ab3ac8ce823e23e43043333fc46b76e04 # v2.0
 
-  typecheck:
+  tsc:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,3 +21,15 @@ jobs:
           node-version-file: .nvmrc
       - run: pnpm install --frozen-lockfile
       - run: pnpm typecheck
+
+  just-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+          node-version-file: .nvmrc
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm just-check

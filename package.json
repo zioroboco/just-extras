@@ -1,7 +1,7 @@
 {
   "name": "just-extras",
   "description": "Utilities for working with justfiles in node projects",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "author": "Louis Quinnell <_@ziorobo.co>",
   "repository": "github:zioroboco/just-extras",
@@ -12,7 +12,9 @@
     "!**/*.test.*"
   ],
   "scripts": {
-    "sync": "just-extras sync --omit install",
+    "just-extras": "just-extras --omit=install",
+    "just-check": "pnpm -s just-extras check",
+    "just-sync": "pnpm -s just-extras sync",
     "example": "cd example && pnpm",
     "format": "just format",
     "typecheck": "just typecheck"
